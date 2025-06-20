@@ -1,206 +1,59 @@
-# Funciones que podría usar el instructor
-En este documento se muestran algunas muestras de formatos que se pueden usar en el archivo **README.me** que pueden ser de ayuda para el instructor
+# ![Logo](images/neteclogo.png) 
 
-- [Fragmentos de código](#fragmentos-de-codigo)
-- [Listas](#listas)
-- [Tablas](#tablas)
-- [Insertar imágenes](#imagenes)
-- [Alertas](#alertas)
+**Plataforma de Laboratorios**
 
-# Fragmentos de codigo
+Bienvenido a la **Plataforma de Laboratorios** del curso **Terraform en Azure**. Aquí podrás explorar diferentes tecnologías a través de prácticas guiadas. ¡Desarrolla tus habilidades y lleva tus conocimientos al siguiente nivel!
 
+---
 
-## Bloques de código
-Para agregar algún fragmento de código debemos de usar la siguiente sintáxis:
+## 🌟 **Lista de Laboratorios - Terraform en Azure**
 
+Cada uno de estos laboratorios está diseñado para ofrecerte una experiencia práctica. Haz clic en los enlaces para comenzar.
 
-### Python
+01. **[Práctica 1: Instalación y Verificación de Terraform en Windows para Azure](/Capítulo2/lab1.md)**
+      - **Descripción**: Instalación de Terraform en Windows y preparación del entorno para usar Azure CLI.
+      - ⏱️ **Duración estimada**: 25 minutos
 
-```python
-import datetime
+02. **[Práctica 2: Autenticación del Proveedor Azure en Terraform](/Capítulo3/lab2.md)**
+      - **Descripción**: Autenticación del proveedor Azure en Terraform usando Azure CLI y configuración en `main.tf`.
+      - ⏱️ **Duración estimada**: 15 minutos
 
-def str2date(sf:str):#"2020-05-08"
-    datos=sf.split('-')#['2020', '05', '08']
-                #'2020':str->2020:int, '05':str->05:int, '08':str->05:int
-    fecha=datetime.date(int(datos[0]), int(datos[1]), int(datos[2]))
-    return fecha
+03. **[Práctica 3: Definición de recursos en Terraform](/Capítulo3/lab3.md)**
+      - **Descripción**: Definición de recursos básicos en Azure desde main.tf: grupo, red virtual e instancia de contenedor.
+      - ⏱️ **Duración estimada**: 15 minutos
 
-sf=input("ingrese la fecha YYYY-MM-DD: ")
-fecha=str2date(sf)
-print(fecha)
-print(type(fecha))
-```
+04. **[Práctica 4: Creación y Asignación de Variables en Terraform](/Capítulo4/lab4.md)**
+      - **Descripción**: Uso de variables locales en `main.tf` para organizar y reutilizar la definición de recursos en Azure.
+      - ⏱️ **Duración estimada**: 15 minutos
 
-### Java
-```java
-public void cleanup() {
-        try {
-            if (connection != null)
-                connection.close();
-        } catch (Exception e) {
-            System.out.println("Excepción capturada: ");
-            e.printStackTrace();
-        }
-    }
-```
+05. **[Práctica 5: Creación de Outputs en Terraform](/Capítulo4/lab5.md)**
+      - **Descripción**: Declaración de salidas `(output)` en main.tf para mostrar información clave tras la ejecución.
+      - ⏱️ **Duración estimada**: 10 minutos
 
+06. **[Práctica 6: Implementación del Ciclo de Vida con Terraform CLI](/Capítulo5/lab6.md)**
+      - **Descripción**: Uso de Terraform CLI para ejecutar el ciclo de vida completo: init, plan, apply, output y destroy.
+      - ⏱️ **Duración estimada**: 35 minutos
 
-### shell
-```shell
-#!/bin/sh
+07. **[Práctica 7: Leer e interpretar el archivo `.tfstate` generado](/Capítulo6/lab7.md)**
+      - **Descripción**: Comprensión del archivo `terraform.tfstate` y cómo Terraform usa su contenido para rastrear recursos.
+      - ⏱️ **Duración estimada**: 20 minutos
 
-CONTADOR=0
-until [ $CONTADOR – ge 3]]; do
-    echo El contador es $CONTADOR
-    CONTADOR=$(($CONTADOR+1))
-done
-```
+08. **[Práctica 8: Crear archivo `.tfvars` con claves y etiqueta sensible](/Capítulo7/lab8.md)**
+      - **Descripción**: Uso de `.tfvars` para separar valores de variables y manejar datos sensibles de forma segura.
+      - ⏱️ **Duración estimada**: 20 minutos
 
-### Ruby
-```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
-```
+09. **[Práctica 9: Estructurar un Proyecto Básico en Terraform](/Capítulo8/lab9.md)**
+      - **Descripción**: Estructuración del proyecto en archivos separados para aplicar buenas prácticas y facilitar su mantenimiento.
+      - ⏱️ **Duración estimada**: 20 minutos
 
-### HTML
+**[Recomendaciones: Ejemplos adicionales de Proyectos en Terraform y Buenas Prácticas de Organización](/notas.md)**
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+---
 
-```
+## 📬 **Contacto y Más Información**
 
-### Javascript
+Si tienes alguna pregunta o necesitas más detalles, no dudes en [contactarnos](mailto:soporte@netec.com). También puedes encontrar más recursos en nuestra página de [Netec](https://netec.com).
 
-```javascript
-var database=db.getSiblingDB("database")
-var collection=database.getCollection("people")
+---
 
-var data=[
-    {name:"edgar"},
-    {name:"juan"},
-    {name:"alicia"}
-]
-
-data.forEach(t=>{
-    console.log(t)
-    var result=collection.insertOne(t)
-    console.log(result)
-})
-
-```
-# Listas
-
-## Lista simple
-- elemento 1
-- elemento 2
-- elemento 3
-
-## Lista números
-1. elemento 1
-2. elemento 2
-3. elemento 3
-
-## Lista anidada
-- Elemento principal
-    - Elemento interno 1
-    - Elemento interno 2
-        - elemento 
-        - elemento
-    - elemento interno 3
-
-## Lista de tareas
-- [ ] tarea 1
-- [x] tarea 2
-- [ ] tarea 3 
-- [ ] \(Optional) tarea opcional 
-
-# Tablas
-
-## Tabla simple
-
-| título columna 1  | título columna 2|
-| ------------- | ------------- |
-| contenido 1  | contenido 2  |
-| contenido 3  | contenido 4  |
-
-
-## Tabla con formato en las columnas
-
-| Command | Description |
-| --- | --- |
-| `git status` | List all *new or modified* files |
-| `git diff` | Show file differences that **haven't been** staged |
-
-
-## Alinear contenido en tabla
-| Left-aligned | Center-aligned | Right-aligned |
-| :---         |     :---:      |          ---: |
-| git status   | git status     | git status    |
-| git diff     | git diff       | git diff      |
-
-# Imagenes
-
-Para insertar una imágen se usa la siguiente sintáxis:
-
-```
-![descripción de la imagen](url imagen)
-```
-El url de la imágen puede ser de la siguiente forma:
-
-- Si la imágen esta dentro de la misma rama se usa la siguiente sintaxis:
-    ```
-     ![description](/assets/images/imagen1.png)
-    ```
-    - Donde:
-        - la ruta */assets/images* esta dentro de la rama donde se encuentra el archivo **README.md**
-
-- Si la imágen esta en otra rama se usa la siguiente sintaxis:
-    ```
-    ![description](/../name_branch/assets/images/imagen1.png)
-    ```
-    - Donde: 
-        - La ruta */../name_branch/assets/images/* esta dentro de el mismo repositorio pero es una rama diferente. 
-
-- Si la imagén esta en internet se usa la siguiente sintaxis: 
-    ``` 
-     ![description](https://url/imagen.png)
-    ```
-- Si se quiere controlar el tamaño de la imágen se debe usar html, de la siguiente forma:
-    ``` html
-    <img src="url image" width="200" height="200">
-     
-    ```
-    - Donde: 
-        - En el html se pueden editar los siguiente elementos: 
-            - **url image**:  La ruta de la imágen
-            - **width**: Ancho de la imágen en pixeles
-            - **height**: Alto de la imágen en pixeles
-
-
-# Alertas
-
-> [!NOTE]
-> útil para agregar alguna nota extra
-
-> [!TIP]
-> útil para dar algún tip
-
-> [!IMPORTANT]
-> útil para algún recordatorio
-
-> [!WARNING]
-> útil para alertar a los alumnos
-
-> [!CAUTION]
-> útil para sugerencias y precauciones.
+¡Gracias por visitar nuestra plataforma! No olvides revisar todos los laboratorios y comenzar tu viaje de aprendizaje hoy mismo.
