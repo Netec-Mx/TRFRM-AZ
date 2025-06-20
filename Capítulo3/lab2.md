@@ -44,9 +44,9 @@ Configurar la autenticación con el proveedor de Azure en Terraform utilizando A
 
    **NOTA IMPORTANTE:** Es posible que al autenticarte te mande algun mensaje de error pero observa tu terminal para verificar que se haya autenticado correctamente como lo muestra la segunda imagen
 
-   ![terraimg10](/TRFRM-AZ/images/lab2/img1.png)
+   ![terraimg10](../images/lab2/img1.png)
    -
-   ![terraimg11](/TRFRM-AZ/images/lab2/img2.png)
+   ![terraimg11](../images/lab2/img2.png)
 
 
 #### Tarea 1.2. Seleccionar la suscripción deseada
@@ -57,7 +57,7 @@ Configurar la autenticación con el proveedor de Azure en Terraform utilizando A
    az account list --output table
    ```
    ---
-   ![terraimg12](/TRFRM-AZ/images/lab2/img3.png)
+   ![terraimg12](../images/lab2/img3.png)
 
 
 - **Paso 2.** Luego, selecciona la suscripción activa ejecutando:
@@ -66,7 +66,7 @@ Configurar la autenticación con el proveedor de Azure en Terraform utilizando A
    az account set --subscription "NOMBRE-DE-LA-SUSCRIPCIÓN"
    ```
    ---
-   ![terraimg13](/TRFRM-AZ/images/lab2/img4.png)
+   ![terraimg13](../images/lab2/img4.png)
 
 - **Paso 3.** Verifica la suscripción activa:
 
@@ -74,7 +74,7 @@ Configurar la autenticación con el proveedor de Azure en Terraform utilizando A
    az account show
    ```
    ---
-   ![terraimg14](/TRFRM-AZ/images/lab2/img5.png)
+   ![terraimg14](../images/lab2/img5.png)
 
 > **TAREA FINALIZADA**
 
@@ -96,17 +96,17 @@ Configurar la autenticación con el proveedor de Azure en Terraform utilizando A
    ---
    **NOTA:** Si es necesario ajusta el nombre de la carpeta.
 
-   ![terraimg15](/TRFRM-AZ/images/lab2/img6.png)
+   ![terraimg15](../images/lab2/img6.png)
 
 - **Paso 2.** Abre esta carpeta desde VS Code: `File > Open Folder... > Selecciona Desktop y luego TERRALABS` y confirma la ventana emergente.
 
-   ![terraimg16](/TRFRM-AZ/images/lab2/img7.png)
+   ![terraimg16](../images/lab2/img7.png)
 
 #### Tarea 2.2. Crear y editar `main.tf`
 
 - **Paso 1.** En el explorador de VS Code, crea un nuevo archivo llamado `main.tf`.
 
-   ![terraimg17](/TRFRM-AZ/images/lab2/img8.png)   
+   ![terraimg17](../images/lab2/img8.png)   
 
 - **Paso 2.** Copia y pega el siguiente contenido:
 
@@ -155,7 +155,7 @@ Configurar la autenticación con el proveedor de Azure en Terraform utilizando A
 
 - **Paso 1.** Da clic en el botón **"Install"**.
 
-   ![terraimg18](/TRFRM-AZ/images/lab2/img9.png)   
+   ![terraimg18](../images/lab2/img9.png)   
 
 - **Paso 2.** Confirma la ventana emergente clic en **Trust Publisher & Install**
 

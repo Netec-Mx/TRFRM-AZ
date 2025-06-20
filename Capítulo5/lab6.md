@@ -39,7 +39,7 @@ Se usará el archivo `main.tf` existente con recursos definidos y variables loca
     terraform init
     ```
     ---
-    ![terraimg25](/TRFRM-AZ/images/lab6/img1.png)
+    ![terraimg25](../images/lab6/img1.png)
 
 - **Paso 2.** Analiza la salida del comando.
 
@@ -61,9 +61,9 @@ Se usará el archivo `main.tf` existente con recursos definidos y variables loca
     terraform plan
     ```
     ---
-    ![terraimg26](/TRFRM-AZ/images/lab6/img2.png)
+    ![terraimg26](../images/lab6/img2.png)
     -
-    ![terraimg27](/TRFRM-AZ/images/lab6/img3.png)
+    ![terraimg27](../images/lab6/img3.png)
 
 - **Paso 2.** Analiza la salida del comando.
 
@@ -75,7 +75,7 @@ Se usará el archivo `main.tf` existente con recursos definidos y variables loca
     terraform plan -var="initials=xxx"
     ```
     ---
-    ![terraimg28](/TRFRM-AZ/images/lab6/img4.png)
+    ![terraimg28](../images/lab6/img4.png)
 
 - **Paso 2.** Analiza la salida del comando nota como todos los nombres cambiaron
 
@@ -101,23 +101,23 @@ Se usará el archivo `main.tf` existente con recursos definidos y variables loca
 
 - **Paso 3.** Cuanto hayas terminado de revisar el `apply`, confirma con `yes` cuando Terraform lo solicite.
 
-    ![terraimg29](/TRFRM-AZ/images/lab6/img5.png)
+    ![terraimg29](../images/lab6/img5.png)
 
     **NOTA:** Tambien puedes usar el comando `terraform apply -auto-approve` es util cuando quieres omitir la confirmacio `yes`.
 
 - **Paso 4.** Analiza los logs de la creacion de los recursos:
 
-    ![terraimg30](/TRFRM-AZ/images/lab6/img6.png)
+    ![terraimg30](../images/lab6/img6.png)
 
 - **Paso 5.** Revisa los `outputs` generados por el `apply`.
 
-    ![terraimg31](/TRFRM-AZ/images/lab6/img7.png)
+    ![terraimg31](../images/lab6/img7.png)
 
 - **Paso 6.** Ahora copia el valor del output llamado `aci_fqdn` y pegalo en una pestaña de tu navegador.
 
-    ![terraimg32](/TRFRM-AZ/images/lab6/img8.png)
+    ![terraimg32](../images/lab6/img8.png)
     -
-    ![terraimg33](/TRFRM-AZ/images/lab6/img9.png)
+    ![terraimg33](../images/lab6/img9.png)
 
 
 > **TAREA FINALIZADA**
@@ -138,7 +138,7 @@ Se usará el archivo `main.tf` existente con recursos definidos y variables loca
     terraform output
     ```
     ---
-    ![terraimg34](/TRFRM-AZ/images/lab6/img10.png)
+    ![terraimg34](../images/lab6/img10.png)
 
 
 #### Tarea 4.2. Consultar una salida específica (opcional)
@@ -149,7 +149,7 @@ Se usará el archivo `main.tf` existente con recursos definidos y variables loca
     terraform output aci_fqdn
     ```
     ---
-    ![terraimg35](/TRFRM-AZ/images/lab6/img11.png)
+    ![terraimg35](../images/lab6/img11.png)
 
 > **TAREA FINALIZADA**
 
@@ -171,13 +171,13 @@ Se usará el archivo `main.tf` existente con recursos definidos y variables loca
     ---
     **Nota:** Las imagenes omiten los detalles de eliminación.
 
-    ![terraimg36](/TRFRM-AZ/images/lab6/img12.png)
+    ![terraimg36](../images/lab6/img12.png)
     -
-    ![terraimg37](/TRFRM-AZ/images/lab6/img13.png)
+    ![terraimg37](../images/lab6/img13.png)
     -
-    ![terraimg38](/TRFRM-AZ/images/lab6/img14.png)
+    ![terraimg38](../images/lab6/img14.png)
     -
-    ![terraimg30](/TRFRM-AZ/images/lab6/img15.png)
+    ![terraimg30](../images/lab6/img15.png)
 
 > **TAREA FINALIZADA**
 

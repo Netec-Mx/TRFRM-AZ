@@ -37,7 +37,7 @@ Esta práctica te permitirá visualizar, interpretar y comprender cómo Terrafor
   terraform.tfstate
   ```
   ---
-  ![terraimg31](/TRFRM-AZ/images/lab7/img1.png)
+  ![terraimg31](../images/lab7/img1.png)
 
   > Este archivo es creado por Terraform para registrar el estado de la infraestructura que gestiona.
 
@@ -59,11 +59,11 @@ Esta práctica te permitirá visualizar, interpretar y comprender cómo Terrafor
 
   - **Outputs**
 
-  ![terraimg32](/TRFRM-AZ/images/lab7/img2.png)
+  ![terraimg32](../images/lab7/img2.png)
 
   - **Resources** La sección de recursos es de las mas extensas, la imagen represnta una parte de lo que te aparecera en tu `tfstate`.
 
-  ![terraimg33](/TRFRM-AZ/images/lab7/img3.png)
+  ![terraimg33](../images/lab7/img3.png)
   
 #### Tarea 2.2. Mostrar el estado con `terraform show`
 
@@ -81,7 +81,7 @@ Esta práctica te permitirá visualizar, interpretar y comprender cómo Terrafor
   terraform state list
   ```
   ---
-  ![terraimg34](/TRFRM-AZ/images/lab7/img4.png)
+  ![terraimg34](../images/lab7/img4.png)
 
 > **TAREA FINALIZADA**
 
@@ -119,7 +119,7 @@ Esta práctica te permitirá visualizar, interpretar y comprender cómo Terrafor
   touch .gitignore
   ```
   ---
-  ![terraimg35](/TRFRM-AZ/images/lab7/img5.png)
+  ![terraimg35](../images/lab7/img5.png)
 
 - **Paso 2.** En el archivo `.gitignore`, asegúrate de incluir:
 
@@ -131,7 +131,7 @@ Esta práctica te permitirá visualizar, interpretar y comprender cómo Terrafor
   .terraform/
   ```
   ---
-  ![terraimg36](/TRFRM-AZ/images/lab7/img6.png)
+  ![terraimg36](../images/lab7/img6.png)
 
 > **TAREA FINALIZADA**
 

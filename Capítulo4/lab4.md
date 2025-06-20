@@ -57,7 +57,7 @@ Refactorizar el archivo `main.tf` utilizando variables locales definidas en el m
   }
   ```
   ---
-  ![terraimg22](/TRFRM-AZ/images/lab4/img1.png)
+  ![terraimg22](../images/lab4/img1.png)
 
 > **TAREA FINALIZADA**
 
@@ -115,7 +115,7 @@ Refactorizar el archivo `main.tf` utilizando variables locales definidas en el m
   }
   ```
   ---
-  ![terraimg23](/TRFRM-AZ/images/lab4/img2.png)
+  ![terraimg23](../images/lab4/img2.png)
 
 > **TAREA FINALIZADA**
 

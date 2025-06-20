@@ -37,7 +37,7 @@ La configuración se dividirá en archivos separados: `main.tf`, `provider.tf`, 
     outputs.tf
     ```
     ---
-    ![terraimg44](/TRFRM-AZ/images/lab9/img1.png)
+    ![terraimg44](../images/lab9/img1.png)
 
 > **TAREA FINALIZADA**
 
@@ -72,7 +72,7 @@ La configuración se dividirá en archivos separados: `main.tf`, `provider.tf`, 
     }
     ```
     ---
-    ![terraimg45](/TRFRM-AZ/images/lab9/img2.png)
+    ![terraimg45](../images/lab9/img2.png)
     
 > **TAREA FINALIZADA**
 
@@ -113,7 +113,7 @@ La configuración se dividirá en archivos separados: `main.tf`, `provider.tf`, 
     }
     ```
     ---
-    ![terraimg46](/TRFRM-AZ/images/lab9/img3.png)
+    ![terraimg46](../images/lab9/img3.png)
 
 > **TAREA FINALIZADA**
 
@@ -154,7 +154,7 @@ La configuración se dividirá en archivos separados: `main.tf`, `provider.tf`, 
     }
     ```
     ---
-    ![terraimg47](/TRFRM-AZ/images/lab9/img4.png)
+    ![terraimg47](../images/lab9/img4.png)
 
 > **TAREA FINALIZADA**
 
@@ -228,9 +228,9 @@ La configuración se dividirá en archivos separados: `main.tf`, `provider.tf`, 
     }
     ```
     ---
-    ![terraimg48](/TRFRM-AZ/images/lab9/img5.png)
+    ![terraimg48](../images/lab9/img5.png)
     ---
-    ![terraimg49](/TRFRM-AZ/images/lab9/img6.png)
+    ![terraimg49](../images/lab9/img6.png)
 
 
 > **TAREA FINALIZADA**
@@ -251,7 +251,7 @@ La configuración se dividirá en archivos separados: `main.tf`, `provider.tf`, 
     terraform fmt
     ```
     ---
-    ![terraimg50](/TRFRM-AZ/images/lab9/img7.png)
+    ![terraimg50](../images/lab9/img7.png)
 
 - **Paso 2.** Ejecuta el siguiente comando para validar sintaxis.
     
@@ -259,7 +259,7 @@ La configuración se dividirá en archivos separados: `main.tf`, `provider.tf`, 
     terraform validate
     ```
     ---
-    ![terraimg51](/TRFRM-AZ/images/lab9/img8.png)
+    ![terraimg51](../images/lab9/img8.png)
 
 - **Paso 3.** Ejecuta el siguiente comando.
 
@@ -267,7 +267,7 @@ La configuración se dividirá en archivos separados: `main.tf`, `provider.tf`, 
     terraform plan
     ```
     ---
-    ![terraimg52](/TRFRM-AZ/images/lab9/img9.png)
+    ![terraimg52](../images/lab9/img9.png)
 
 - **Paso 4.** Ejecuta el siguiente comando.
 
@@ -275,7 +275,7 @@ La configuración se dividirá en archivos separados: `main.tf`, `provider.tf`, 
     terraform apply
     ```
     ---
-    ![terraimg53](/TRFRM-AZ/images/lab9/img10.png)
+    ![terraimg53](../images/lab9/img10.png)
 
 
 > **TAREA FINALIZADA**

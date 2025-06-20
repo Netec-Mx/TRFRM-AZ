@@ -33,7 +33,7 @@ Instalar Terraform en Windows y validar su instalación correctamente. Además, 
 
 - **Paso 2.** Selecciona el sistema operativo **Windows** y descarga la versión de 64-bit (**AMD64**) en formato `.zip`.
 
-   ![terraimg1](/TRFRM-AZ/images/lab1/img1.png)
+   ![terraimg1](../images/lab1/img1.png)
 
 ### Tarea 1.2. Extraer el archivo ZIP
 
@@ -49,7 +49,7 @@ Instalar Terraform en Windows y validar su instalación correctamente. Además, 
    
    ---
 
-   ![terraimg2](/TRFRM-AZ/images/lab1/img2.png)
+   ![terraimg2](../images/lab1/img2.png)
 
 ### Tarea 1.3. Agregar Terraform al PATH del sistema
 
@@ -57,11 +57,11 @@ Instalar Terraform en Windows y validar su instalación correctamente. Además, 
 
 - **Paso 2.** Ve a la pestaña **"Opciones avanzadas"** o **"Avanzadas"** y haz clic en **"Variables de entorno..."**.
 
-   ![terraimg3](/TRFRM-AZ/images/lab1/img3.png)
+   ![terraimg3](../images/lab1/img3.png)
 
 - **Paso 3.** En la sección **"Variables del sistema"**, busca la variable llamada `Path` y haz clic en **Editar**.
 
-   ![terraimg4](/TRFRM-AZ/images/lab1/img4.png)
+   ![terraimg4](../images/lab1/img4.png)
 
 - **Paso 4.** En la ventana que aparece, haz clic en **"Nuevo"** y agrega la ruta donde descomprimiste Terraform, por ejemplo:
 
@@ -69,7 +69,7 @@ Instalar Terraform en Windows y validar su instalación correctamente. Además, 
    C:\Terraform
    ```
    ---
-   ![terraimg5](/TRFRM-AZ/images/lab1/img5.png)
+   ![terraimg5](../images/lab1/img5.png)
 
 - **Paso 5.** Haz clic en **OK** o **Aceptar** en todas las ventanas para guardar los cambios.
 
@@ -89,15 +89,15 @@ Instalar Terraform en Windows y validar su instalación correctamente. Además, 
 
 - **Paso 2.** Abrir la terminal integrada de Visual Studio Code (menú `Terminal > New Terminal`) o la combinacion de teclas `CTRL + ñ`, tambien puedes dar clic en el botón como lo muestra la imagen.
 
-   ![terraimg6](/TRFRM-AZ/images/lab1/img6.png)
+   ![terraimg6](../images/lab1/img6.png)
 
 - **Paso 3.** En la terminal abierta da clic en la pestaña y luego en **Select Default Profile**
 
-   ![terraimg7](/TRFRM-AZ/images/lab1/img7.png)
+   ![terraimg7](../images/lab1/img7.png)
 
 - **Paso 4.** En la ventana superior selecciona la opción **Git Bash**.
 
-   ![terraimg8](/TRFRM-AZ/images/lab1/img8.png)
+   ![terraimg8](../images/lab1/img8.png)
 
 - **Paso 5.** Ahora cierra el software de **Visual Studio Code** y vuelvelo abrir para que tomen efectos los cambios y **repite el paso 2**.
 
@@ -109,7 +109,7 @@ Instalar Terraform en Windows y validar su instalación correctamente. Además, 
    terraform -version
    ```
    ---
-   ![terraimg9](/TRFRM-AZ/images/lab1/img9.png)
+   ![terraimg9](../images/lab1/img9.png)
 
 > **TAREA FINALIZADA**   
 

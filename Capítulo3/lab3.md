@@ -49,7 +49,7 @@ Definir tres recursos básicos en Azure con Terraform: un grupo de recursos, una
   }
   ```
   ---
-  ![terraimg19](/TRFRM-AZ/images/lab3/img1.png)  
+  ![terraimg19](../images/lab3/img1.png)  
 
 > Ejemplo: si tus iniciales son `lmr`, el nombre será `rg-vnet-lmr`.
 
@@ -80,7 +80,7 @@ Definir tres recursos básicos en Azure con Terraform: un grupo de recursos, una
   }
   ```
   ---
-  ![terraimg20](/TRFRM-AZ/images/lab3/img2.png) 
+  ![terraimg20](../images/lab3/img2.png) 
 
 > Asegúrate de usar las mismas iniciales que en el grupo de recursos.
 
@@ -127,7 +127,7 @@ Definir tres recursos básicos en Azure con Terraform: un grupo de recursos, una
   }
   ```
   ---
-  ![terraimg21](/TRFRM-AZ/images/lab3/img3.png)
+  ![terraimg21](../images/lab3/img3.png)
 
 > Cambia también `acilab-abc` por algo como `acilab-jpg` si tus iniciales son `JPG`.
 

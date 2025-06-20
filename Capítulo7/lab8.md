@@ -47,7 +47,7 @@ Se añadirá una variable sensible para simular una clave privada y se demostrar
   }
   ```
   ---
-  ![terraimg37](/TRFRM-AZ/images/lab8/img1.png)
+  ![terraimg37](../images/lab8/img1.png)
 
 #### Tarea 1.2. Reorganizar valores en `locals`
 
@@ -79,7 +79,7 @@ Se añadirá una variable sensible para simular una clave privada y se demostrar
 
 - **Paso 1.** Dentro de la carpeta `TERRALABS` crea un archivo llamado `terraform.tfvars`
 
-  ![terraimg38](/TRFRM-AZ/images/lab8/img2.png)
+  ![terraimg38](../images/lab8/img2.png)
 
 - **Paso 2.** Copia y pega el siguiente bloque de codigo en el archivo `terraform.tfvars`.
 
@@ -92,7 +92,7 @@ Se añadirá una variable sensible para simular una clave privada y se demostrar
   secreto_api  = "ClaveSuperPrivada123!"
   ```
   ---
-  ![terraimg39](/TRFRM-AZ/images/lab8/img3.png)
+  ![terraimg39](../images/lab8/img3.png)
 
 > **TAREA FINALIZADA**
 
@@ -115,11 +115,11 @@ Se añadirá una variable sensible para simular una clave privada y se demostrar
   }
   ```
   ---
-  ![terraimg40](/TRFRM-AZ/images/lab8/img4.png)
+  ![terraimg40](../images/lab8/img4.png)
   ---
-  ![terraimg41](/TRFRM-AZ/images/lab8/img5.png)
+  ![terraimg41](../images/lab8/img5.png)
   ---
-  ![terraimg41](/TRFRM-AZ/images/lab8/img6.png)
+  ![terraimg41](../images/lab8/img6.png)
 
 #### Tarea 3.2. Crear output sensible
 
@@ -133,7 +133,7 @@ Se añadirá una variable sensible para simular una clave privada y se demostrar
   }
   ```
   ---
-  ![terraimg42](/TRFRM-AZ/images/lab8/img7.png)
+  ![terraimg42](../images/lab8/img7.png)
 
 - **Paso 2.** Ahora ejecuta el siguiente comando para probar.
 
@@ -145,7 +145,7 @@ Se añadirá una variable sensible para simular una clave privada y se demostrar
 
 - **Paso 3.** Ya sea con un `plan` o un `apply` observa las etiquetas de cada recurso en la salida y la etiqueta sensible.
 
-  ![terraimg43](/TRFRM-AZ/images/lab8/img8.png)
+  ![terraimg43](../images/lab8/img8.png)
 
 > **TAREA FINALIZADA**
 

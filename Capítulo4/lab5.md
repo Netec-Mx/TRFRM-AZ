@@ -59,7 +59,7 @@ Las salidas se definirán directamente dentro del archivo `main.tf`.
   }
   ```
   ---
-  ![terraimg24](/TRFRM-AZ/images/lab5/img1.png)
+  ![terraimg24](../images/lab5/img1.png)
 
 > **TAREA FINALIZADA**
 
