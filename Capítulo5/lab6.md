@@ -2,8 +2,7 @@
 
 ## Objetivo
 
-Ejecutar el ciclo de vida completo de infraestructura usando Terraform CLI: inicialización, planificación, aplicación, consulta de salidas y destrucción.  
-Se usará el archivo `main.tf` existente con recursos definidos y variables locales, tal como se organizó en prácticas anteriores.
+Ejecutar el ciclo de vida completo de infraestructura usando Terraform CLI: inicialización, planificación, aplicación, consulta de salidas y destrucción. Se usará el archivo `main.tf` existente con recursos definidos y variables locales, tal como se organizó en prácticas anteriores.
 
 ## Requisitos Previos
 
@@ -13,7 +12,7 @@ Se usará el archivo `main.tf` existente con recursos definidos y variables loca
   - Recursos: `azurerm_resource_group`, `azurerm_virtual_network`, `azurerm_container_group`
   - Bloques `output`
 - Tener configurada la variable `initials` con tus iniciales.
-- Tener instalada la CLI de Terraform y Azure CLI (`az login` ejecutado).
+- Tener instalada la CLI de Terraform y Azure CLI `az login`.
 
 ## Duración aproximada
 
@@ -99,7 +98,7 @@ Se usará el archivo `main.tf` existente con recursos definidos y variables loca
 
 - **Paso 2.** Analiza la salida del comando notaras que es similar al comando `terraform plan`.
 
-- **Paso 3.** Cuanto hayas terminado de revisar el `apply`, confirma con `yes` cuando Terraform lo solicite.
+- **Paso 3.** Cuanto hayas terminado de revisar el `apply`, confirma con **`yes`** cuando Terraform lo solicite.
 
     ![terraimg29](../images/lab6/img5.png)
 
@@ -185,7 +184,7 @@ Se usará el archivo `main.tf` existente con recursos definidos y variables loca
 
 ---
 
-> **¡FELICIDADES HAZ COMPLETADO EL LABORAOTRIO 6!**
+> **¡FELICIDADES HAZ COMPLETADO EL LABORATORIO 6!**
 
 ## Resultado Final
 

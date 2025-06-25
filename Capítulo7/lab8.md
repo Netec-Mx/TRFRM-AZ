@@ -2,14 +2,17 @@
 
 ## Objetivo
 
-Separar los valores de las variables del archivo principal `main.tf` utilizando un archivo `.tfvars` para mejorar la seguridad, organización y reutilización del código.  
-Se añadirá una variable sensible para simular una clave privada y se demostrará cómo ocultarla en la salida usando `sensitive = true`.
+Separar los valores de las variables del archivo principal `main.tf` utilizando un archivo `.tfvars` para mejorar la seguridad, organización y reutilización del código. Se añadirá una variable sensible para simular una clave privada y se demostrará cómo ocultarla en la salida usando `sensitive = true`.
 
 ## Requisitos Previos
 
 - Haber completado las prácticas anteriores (especialmente la 4 y 5).
 - Tener la carpeta `TERRALABS` con el archivo `main.tf` funcional.
 - Tener recursos definidos: `azurerm_resource_group`, `azurerm_virtual_network`, `azurerm_container_group`.
+
+---
+
+**[⬅️ Atrás](https://netec-mx.github.io/TRFRM-AZ/Capítulo6/lab7.html)** | **[Lista General](https://netec-mx.github.io/TRFRM-AZ/)** | **[Siguiente ➡️](https://netec-mx.github.io/TRFRM-AZ/Capítulo8/lab9.html)**
 
 ---
 
@@ -30,6 +33,7 @@ Se añadirá una variable sensible para simular una clave privada y se demostrar
     description = "Iniciales del estudiante"
     type        = string
   } 
+
   variable "env" {
     description = "Entorno de despliegue (dev, test, prod)"
     type        = string
@@ -153,7 +157,7 @@ Se añadirá una variable sensible para simular una clave privada y se demostrar
 
 ---
 
-> **¡FELICIDADES HAZ COMPLETADO EL LABORAOTRIO 8!**
+> **¡FELICIDADES HAZ COMPLETADO EL LABORATORIO 8!**
 
 ## Resultado Final
 
@@ -165,6 +169,8 @@ Se añadirá una variable sensible para simular una clave privada y se demostrar
 ---
 
 ## Notas
+
+> Esta solo es información de referencia, no se debe usar en la practica.
 
 - Terraform carga automáticamente `terraform.tfvars`, no es necesario usar `-var-file`.
 - Para visualizar los outputs sin mostrar la clave:
@@ -185,3 +191,7 @@ Se añadirá una variable sensible para simular una clave privada y se demostrar
   ```
   terraform.tfvars
   ```
+
+  ---
+
+**[⬅️ Atrás](https://netec-mx.github.io/TRFRM-AZ/Capítulo6/lab7.html)** | **[Lista General](https://netec-mx.github.io/TRFRM-AZ/)** | **[Siguiente ➡️](https://netec-mx.github.io/TRFRM-AZ/Capítulo8/lab9.html)**
