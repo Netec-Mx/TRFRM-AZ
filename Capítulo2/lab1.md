@@ -35,7 +35,7 @@ Instalar Terraform en Windows y validar su instalación correctamente. Además, 
 
    ![terraimg1](../images/lab1/img1.png)
 
-### Tarea 1.2. Extraer el archivo ZIP
+#### Tarea 1.2. Extraer el archivo ZIP
 
 - **Paso 1.** Una vez descargado el archivo, haz clic derecho sobre el archivo `.zip` y selecciona **"Extraer todo..."**.
 
@@ -51,9 +51,9 @@ Instalar Terraform en Windows y validar su instalación correctamente. Además, 
 
    ![terraimg2](../images/lab1/img2.png)
 
-### Tarea 1.3. Agregar Terraform al PATH del sistema
+#### Tarea 1.3. Agregar Terraform al PATH del sistema
 
-- **Paso 1.** Presiona `Win + R`, escribe `sysdm.cpl` y presiona Enter para abrir las Propiedades del sistema.
+- **Paso 1.** Presiona `Win + R`, escribe `sysdm.cpl` y presiona Enter para abrir las **Propiedades del sistema.**
 
 - **Paso 2.** Ve a la pestaña **"Opciones avanzadas"** o **"Avanzadas"** y haz clic en **"Variables de entorno..."**.
 
@@ -87,7 +87,7 @@ Instalar Terraform en Windows y validar su instalación correctamente. Además, 
 
 - **Paso 1.** Abre **Visual Studio Code**, puede estar como acceso directo en el escritorio o desde las **aplicaciones** del sistema operativo de **Windows**.
 
-- **Paso 2.** Abrir la terminal integrada de Visual Studio Code (menú `Terminal > New Terminal`) o la combinacion de teclas `CTRL + ñ`, tambien puedes dar clic en el botón como lo muestra la imagen.
+- **Paso 2.** Abrir la terminal integrada de Visual Studio Code **(menú `Terminal > New Terminal`)** o la combinacion de teclas **`CTRL + ñ`**, tambien puedes dar clic en el botón como lo muestra la imagen.
 
    ![terraimg6](../images/lab1/img6.png)
 
@@ -117,7 +117,7 @@ Instalar Terraform en Windows y validar su instalación correctamente. Además, 
 
 ---
 
-> **¡FELICIDADES HAZ COMPLETADO EL LABORAOTRIO 1!**
+> **¡FELICIDADES HAZ COMPLETADO EL LABORATORIO 1!**
 
 ## Resultado Final
 
