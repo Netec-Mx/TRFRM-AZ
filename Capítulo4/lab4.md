@@ -8,7 +8,7 @@ Refactorizar el archivo `main.tf` utilizando variables locales definidas en el m
 
 - Haber completado la Práctica 3 con los recursos definidos: `azurerm_resource_group`, `azurerm_virtual_network` y `azurerm_container_group`.
 - Tener configurado el proveedor `azurerm` en el archivo `main.tf`.
-- Estar autenticado con Azure CLI (`az login`).
+- Estar autenticado con Azure CLI `az login`.
 - Tener la carpeta `TERRALABS` con el archivo `main.tf`.
 
 ## Duración aproximada
@@ -35,7 +35,17 @@ Refactorizar el archivo `main.tf` utilizando variables locales definidas en el m
 
 #### Tarea 1.2. Añadir bloques de variables y valores
 
-- **Paso 1.** Copia este bloque al inicio del archivo, antes de los recursos y despues del proveedor declarado:
+- **Paso 1.** Añade la variable `initials` con el valor de forma local, copia el siguiente codigo antes de los recursos y despues del proveedor declarado. **`Sustituye el valor del parametro default por tus iniciales`**:
+
+  ```hcl
+  variable "initials" {
+    description = "Iniciales del estudiante"
+    type        = string
+    default     = "xxx"
+  }
+  ```
+
+- **Paso 2.** Copia este bloque al inicio del archivo, antes de los recursos y despues de la variable `initials` declarada:
 
   ```hcl
   locals {
@@ -44,16 +54,6 @@ Refactorizar el archivo `main.tf` utilizando variables locales definidas en el m
     vnet_name            = "vnet-${var.initials}"
     aci_name             = "aci-${var.initials}"
     aci_dns_label        = "acilab-${lower(var.initials)}"
-  }
-  ```
-
-- **Paso 2.** Añade la variable `initials` con el valor de forma local, copia el siguiente codigo antes de la declaracion de `locals`. **`Sustituye el valor parametro default por tus iniciales`**:
-
-  ```hcl
-  variable "initials" {
-    description = "Iniciales del estudiante"
-    type        = string
-    default     = "xxx"
   }
   ```
   ---
@@ -72,7 +72,9 @@ Refactorizar el archivo `main.tf` utilizando variables locales definidas en el m
 #### Tarea 2.1. Sustituir los valores fijos en los recursos
 
 - **Paso 1.** Asegúrate de tener estos recursos definidos, ahora con variables:
+
   - **Opcion 1:** Puedes copiar y pegar todo el siguiente bloque ya tiene los cambios de las variables.
+
   - **Opcion 2:** Puedes buscar solo las lineas que necesitan las variables y cambiarlas, puees apoyarte de la imagen.
 
   ```hcl
@@ -123,7 +125,7 @@ Refactorizar el archivo `main.tf` utilizando variables locales definidas en el m
 
 ---
 
-> **¡FELICIDADES HAZ COMPLETADO EL LABORAOTRIO 4!**
+> **¡FELICIDADES HAZ COMPLETADO EL LABORATORIO 4!**
 
 ## Resultado Final
 
@@ -138,7 +140,9 @@ Esto facilita la reutilización del código y permite crear múltiples ambientes
 
 ## Notas
 
-- Para ejecutar esta práctica, puedes pasar el valor así:
+> Esta solo es información de referencia, no se debe usar en la practica.
+
+- El siguiente comando ayudaria a pasar el valor así:
 
   ```bash
   terraform apply -var="initials=xxx"

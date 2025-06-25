@@ -2,8 +2,7 @@
 
 ## Objetivo
 
-Aprender a declarar y utilizar salidas (`output`) en Terraform para mostrar valores importantes al finalizar una ejecución, como el nombre del grupo de recursos, la dirección DNS del contenedor y el nombre de la red virtual.  
-Las salidas se definirán directamente dentro del archivo `main.tf`.
+Aprender a declarar y utilizar salidas (`output`) en Terraform para mostrar valores importantes al finalizar una ejecución, como el nombre del grupo de recursos, la dirección DNS del contenedor y el nombre de la red virtual. Las salidas se definirán directamente dentro del archivo `main.tf`.
 
 ## Requisitos Previos
 
@@ -12,7 +11,7 @@ Las salidas se definirán directamente dentro del archivo `main.tf`.
   - `azurerm_resource_group`
   - `azurerm_virtual_network`
   - `azurerm_container_group`
-- Tener autenticación activa con Azure CLI (`az login`).
+- Tener autenticación activa con Azure CLI `az login`.
 
 ## Duración aproximada
 
@@ -67,7 +66,7 @@ Las salidas se definirán directamente dentro del archivo `main.tf`.
 
 ---
 
-> **¡FELICIDADES HAZ COMPLETADO EL LABORAOTRIO 5!**
+> **¡FELICIDADES HAZ COMPLETADO EL LABORATORIO 5!**
 
 ## Resultado Final
 
@@ -80,6 +79,8 @@ Las salidas se definirán directamente dentro del archivo `main.tf`.
 ---
 
 ## Notas
+
+> Esta solo es información de referencia, no se debe usar en la practica.
 
 - Puedes ver los outputs sin aplicar cambios con:
 
