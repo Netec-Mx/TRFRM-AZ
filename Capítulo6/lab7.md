@@ -2,8 +2,7 @@
 
 ## Objetivo
 
-Entender la función y estructura del archivo `terraform.tfstate`, el cual mantiene el estado actual de los recursos creados por Terraform.  
-Esta práctica te permitirá visualizar, interpretar y comprender cómo Terraform rastrea los recursos administrados.
+Entender la función y estructura del archivo `terraform.tfstate`, el cual mantiene el estado actual de los recursos creados por Terraform. Esta práctica te permitirá visualizar, interpretar y comprender cómo Terraform rastrea los recursos administrados.
 
 ## Requisitos Previos
 
@@ -61,7 +60,7 @@ Esta práctica te permitirá visualizar, interpretar y comprender cómo Terrafor
 
   ![terraimg32](../images/lab7/img2.png)
 
-  - **Resources** La sección de recursos es de las mas extensas, la imagen represnta una parte de lo que te aparecera en tu `tfstate`.
+  - **Resources** La sección de recursos es de las mas extensas, la imagen representa una parte de lo que te aparecera en tu `tfstate`.
 
   ![terraimg33](../images/lab7/img3.png)
   
@@ -75,7 +74,7 @@ Esta práctica te permitirá visualizar, interpretar y comprender cómo Terrafor
 
   > Este comando presenta el estado de los recursos en un formato legible, incluyendo nombres, tipos y propiedades.
 
-- **Paso 3.** Puedes mejorar la salida con el siguiente comando.
+- **Paso 2.** Puedes mejorar la salida con el siguiente comando.
 
   ```bash
   terraform state list
@@ -139,7 +138,7 @@ Esta práctica te permitirá visualizar, interpretar y comprender cómo Terrafor
 
 ---
 
-> **¡FELICIDADES HAZ COMPLETADO EL LABORAOTRIO 7!**
+> **¡FELICIDADES HAZ COMPLETADO EL LABORATORIO 7!**
 
 ## Resultado Final
 

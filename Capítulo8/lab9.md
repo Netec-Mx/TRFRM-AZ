@@ -8,8 +8,7 @@ La configuración se dividirá en archivos separados: `main.tf`, `provider.tf`, 
 ## Requisitos Previos
 
 - Haber completado las prácticas anteriores con recursos creados.
-- Tener la carpeta `TERRALABS` operativa con `terraform init` ya ejecutado Opcional.
-- Tener acceso a la CLI de Azure (`az login`).
+- Tener la carpeta `TERRALABS` operativa con `terraform init` ya ejecutado (Opcional).
 
 ## Duración aproximada
 
@@ -284,7 +283,7 @@ La configuración se dividirá en archivos separados: `main.tf`, `provider.tf`, 
 
 ---
 
-> **¡FELICIDADES HAZ COMPLETO EL LABORAOTRIO 9!**
+> **¡FELICIDADES HAZ COMPLETO EL LABORATORIO 9!**
 
 ## Resultado Final
 
@@ -313,7 +312,9 @@ El proyecto queda listo para ser mantenido a escala y en equipo, siguiendo buena
     terraform.tfvars
     ```
 
-- La modularización es el primer paso para escalar a proyectos más grandes usando módulos reutilizables.
+- **La modularización** es el primer paso para escalar a proyectos más grandes usando módulos reutilizables.
+
+## Te esperamos en el curso de Terraform Intermedio.
 
 ---
 

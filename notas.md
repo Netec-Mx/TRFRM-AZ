@@ -1,5 +1,7 @@
 # Ejemplos adicionales de Proyectos en Terraform y Buenas Prácticas de Organización
 
+## **[Lista General](https://netec-mx.github.io/TRFRM-AZ/)**
+
 ## Estructura 1: Proyecto Simple (Monolítico)
 
 ### 🔹 Usos: proyectos individuales, pruebas, infraestructura puntual.
@@ -67,5 +69,5 @@ modular-proyecto/
 ├── .gitignore
 └── README.md
 ```
-
-## Te esperamos en el curso de Terraform Intermedio.
+---
+## **[Lista General](https://netec-mx.github.io/TRFRM-AZ/)**

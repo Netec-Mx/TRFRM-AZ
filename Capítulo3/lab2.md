@@ -9,7 +9,7 @@ Configurar la autenticación con el proveedor de Azure en Terraform utilizando A
 - Terraform instalado y funcional en Windows.
 - Visual Studio Code instalado.
 - Git Bash instalado y configurado como terminal por defecto en VS Code.
-- Azure CLI instalado y autenticado con `az login`.
+- Azure CLI instalado.
 - Tener una suscripción activa en Azure.
 
 ## Duración aproximada
@@ -62,6 +62,8 @@ Configurar la autenticación con el proveedor de Azure en Terraform utilizando A
 
 - **Paso 2.** Luego, selecciona la suscripción activa ejecutando:
 
+   **NOTA:** Sustituye el nombre de la suscipción por la del comando anterior, ejecutalo sin las comillas dobles.
+
    ```bash
    az account set --subscription "NOMBRE-DE-LA-SUSCRIPCIÓN"
    ```
@@ -90,6 +92,8 @@ Configurar la autenticación con el proveedor de Azure en Terraform utilizando A
 
 - **Paso 1.** En la terminal de Git Bash, usa la carpeta previamente creada para el proyecto llamada **TERRALABS**:
 
+   **NOTA:** Si la carpeta `TERRALABS` no existe creala en el Escritorio.
+
    ```bash
    cd Desktop/TERRALABS
    ```
@@ -98,7 +102,7 @@ Configurar la autenticación con el proveedor de Azure en Terraform utilizando A
 
    ![terraimg15](../images/lab2/img6.png)
 
-- **Paso 2.** Abre esta carpeta desde VS Code: `File > Open Folder... > Selecciona Desktop y luego TERRALABS` y confirma la ventana emergente.
+- **Paso 2.** Abre esta carpeta desde VS Code: **`File > Open Folder... > Selecciona Desktop y luego TERRALABS`** y confirma la ventana emergente.
 
    ![terraimg16](../images/lab2/img7.png)
 
@@ -167,19 +171,21 @@ Configurar la autenticación con el proveedor de Azure en Terraform utilizando A
 
 - **Paso 2.** Verifica que aparezca resaltado de sintaxis (colores) y que se activen sugerencias automáticas (`CTRL + SPACE`).
 
+- **Paso 3.** Por el momento no ejecutamos nada mas.
+
 > **TAREA FINALIZADA**
 
 **Resultado esperado:** Visual Studio Code estará listo para trabajar con archivos Terraform de forma eficiente, con ayuda de resaltado de sintaxis, validación en tiempo real y autocompletado.
 
 ---
 
-> **¡FELICIDADES HAZ COMPLETADO EL LABORAOTRIO 2!**
+> **¡FELICIDADES HAZ COMPLETADO EL LABORATORIO 2!**
 
 ## Resultado Final
 
 - Azure CLI autenticado correctamente en tu cuenta de Azure.
 - Archivo `main.tf` configurado con el proveedor `azurerm`.
-- Proyecto inicializado en una carpeta organizada.
+- Proyecto creado en una carpeta organizada.
 - Visual Studio Code configurado como entorno de desarrollo para Terraform.
 
 ---

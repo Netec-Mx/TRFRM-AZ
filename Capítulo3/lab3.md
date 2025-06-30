@@ -24,9 +24,7 @@ Definir tres recursos básicos en Azure con Terraform: un grupo de recursos, una
 
 ### Tarea 1. Declarar el Grupo de Recursos
 
-> En esta tarea se agregará un bloque que define el grupo de recursos de Azure en el archivo `main.tf`.
-
-> Cada estudiante debe usar sus **iniciales** para evitar conflictos en los nombres.
+> En esta tarea se agregará un bloque que define el grupo de recursos de Azure en el archivo `main.tf`. Cada estudiante debe usar sus **iniciales** para evitar conflictos en los nombres.
 
 #### Tarea 1.1. Abrir el archivo `main.tf`
 
@@ -69,7 +67,7 @@ Definir tres recursos básicos en Azure con Terraform: un grupo de recursos, una
 
 - **Paso 1.** Justo después del bloque anterior, agrega este fragmento de código:
 
-  **NOTA:** Cambia el valor del segundo octeto de la propiedad `address_space` usa un valor entre 1 y 254. Pregunta al equipo si ese valor ya fue usado para evitar conflictos de redes.
+  **NOTA:** Cambia el valor del segundo octeto de la propiedad **`address_space`** usa un valor entre **1 y 254**. Pregunta al equipo si ese valor ya fue usado para evitar conflictos de redes.
 
   ```hcl
   resource "azurerm_virtual_network" "vnet_demo" {
@@ -129,7 +127,7 @@ Definir tres recursos básicos en Azure con Terraform: un grupo de recursos, una
   ---
   ![terraimg21](../images/lab3/img3.png)
 
-> Cambia también `acilab-abc` por algo como `acilab-jpg` si tus iniciales son `JPG`.
+> Cambia también `acilab-abc` por algo como `acilab-jpg` si tus iniciales son `jpg`.
 
 > **TAREA FINALIZADA**
 
@@ -137,7 +135,7 @@ Definir tres recursos básicos en Azure con Terraform: un grupo de recursos, una
 
 ---
 
-> **¡FELICIDADES HAZ COMPLETADO EL LABORAOTRIO 3!**
+> **¡FELICIDADES HAZ COMPLETADO EL LABORATORIO 3!**
 
 ## Resultado Final
 
@@ -152,7 +150,7 @@ Definir tres recursos básicos en Azure con Terraform: un grupo de recursos, una
 ## Notas
 
 - Esta práctica no ejecuta `terraform init`, `plan` ni `apply`.
-- No olvides personalizar todas las apariciones de `ABC` con tus iniciales.
+- No olvides personalizar todas las apariciones de `xxx` con tus iniciales.
 - El valor `dns_name_label` en el contenedor debe ser **único globalmente** (puede causar error si se repite).
 
 ---
