@@ -20,7 +20,7 @@ Separar los valores de las variables del archivo principal `main.tf` utilizando 
 
 ### Tarea 1. Declarar nuevas variables en `main.tf`
 
-> Se añadirán definiciones de variables que serán cargadas desde el archivo `.tfvars`.
+Se añadirán definiciones de variables que serán cargadas desde el archivo `.tfvars`.
 
 #### Tarea 1.1. Abrir y modificar `main.tf`
 
@@ -50,12 +50,14 @@ Separar los valores de las variables del archivo principal `main.tf` utilizando 
     sensitive   = true
   }
   ```
+  
   ---
+  
   ![terraimg37](../images/lab8/img1.png)
 
 #### Tarea 1.2. Reorganizar valores en `locals`
 
-- **Paso 1.** Asegúrate de tener este bloque:
+- **Paso 3.** Asegúrate de tener este bloque:
   
   **NOTA:** Si ya lo tienes avanza a la siguiente tarea.
 
@@ -77,7 +79,7 @@ Separar los valores de las variables del archivo principal `main.tf` utilizando 
 
 ### Tarea 2. Crear y configurar el archivo `terraform.tfvars`
 
-> Este archivo contendrá los valores de las variables anteriores, incluidas las sensibles.
+Este archivo contendrá los valores de las variables anteriores, incluidas las sensibles.
 
 #### Tarea 2.1. Crear `terraform.tfvars` en `TERRALABS`
 
@@ -95,7 +97,9 @@ Separar los valores de las variables del archivo principal `main.tf` utilizando 
   custom_tag   = "Terraform_Azure_Lab"
   secreto_api  = "ClaveSuperPrivada123!"
   ```
+  
   ---
+  
   ![terraimg39](../images/lab8/img3.png)
 
 > **TAREA FINALIZADA**
@@ -106,7 +110,7 @@ Separar los valores de las variables del archivo principal `main.tf` utilizando 
 
 ### Tarea 3. Usar las variables y proteger la clave secreta
 
-> Se utilizarán las variables en etiquetas, y se agregará un output sensible para verificar el uso de claves privadas.
+Se utilizarán las variables en etiquetas, y se agregará un output sensible para verificar el uso de claves privadas.
 
 #### Tarea 3.1. Usar variables en los recursos
 
@@ -118,16 +122,22 @@ Separar los valores de las variables del archivo principal `main.tf` utilizando 
     proyecto    = var.custom_tag
   }
   ```
+  
   ---
+  
   ![terraimg40](../images/lab8/img4.png)
+  
   ---
+  
   ![terraimg41](../images/lab8/img5.png)
+  
   ---
+  
   ![terraimg41](../images/lab8/img6.png)
 
 #### Tarea 3.2. Crear output sensible
 
-- **Paso 1.** Al final de `main.tf`, agrega:
+- **Paso 2.** Al final de `main.tf`, agrega:
 
   ```hcl
   output "clave_api" {
@@ -136,10 +146,12 @@ Separar los valores de las variables del archivo principal `main.tf` utilizando 
     sensitive   = true
   }
   ```
+  
   ---
+  
   ![terraimg42](../images/lab8/img7.png)
 
-- **Paso 2.** Ahora ejecuta el siguiente comando para probar.
+- **Paso 3.** Ahora ejecuta el siguiente comando para probar.
 
   ```hcl
   terraform apply -auto-approve
@@ -147,7 +159,7 @@ Separar los valores de las variables del archivo principal `main.tf` utilizando 
 
   **NOTA:** Si ya tienes la infraestructura creada puedes usar `terraform plan`
 
-- **Paso 3.** Ya sea con un `plan` o un `apply` observa las etiquetas de cada recurso en la salida y la etiqueta sensible.
+- **Paso 4.** Ya sea con un `plan` o un `apply` observa las etiquetas de cada recurso en la salida y la etiqueta sensible.
 
   ![terraimg43](../images/lab8/img8.png)
 

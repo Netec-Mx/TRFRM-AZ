@@ -25,7 +25,7 @@ Refactorizar el archivo `main.tf` utilizando variables locales definidas en el m
 
 ### Tarea 1. Declarar las variables dentro de `main.tf`
 
-> En esta tarea se crearán las variables directamente al inicio del archivo `main.tf`, dentro de bloques `variable`, y se asignarán sus valores en el bloque `locals`.
+En esta tarea se crearán las variables directamente al inicio del archivo `main.tf`, dentro de bloques `variable`, y se asignarán sus valores en el bloque `locals`.
 
 #### Tarea 1.1. Abrir el archivo `main.tf`
 
@@ -56,7 +56,9 @@ Refactorizar el archivo `main.tf` utilizando variables locales definidas en el m
     aci_dns_label        = "acilab-${lower(var.initials)}"
   }
   ```
+  
   ---
+  
   ![terraimg22](../images/lab4/img1.png)
 
 > **TAREA FINALIZADA**
@@ -67,7 +69,7 @@ Refactorizar el archivo `main.tf` utilizando variables locales definidas en el m
 
 ### Tarea 2. Reescribir los recursos para usar las variables
 
-> En esta tarea se actualizarán los recursos ya existentes en `main.tf` para que usen las variables y valores del bloque `locals`.
+En esta tarea se actualizarán los recursos ya existentes en `main.tf` para que usen las variables y valores del bloque `locals`.
 
 #### Tarea 2.1. Sustituir los valores fijos en los recursos
 
@@ -116,7 +118,9 @@ Refactorizar el archivo `main.tf` utilizando variables locales definidas en el m
     }
   }
   ```
+  
   ---
+  
   ![terraimg23](../images/lab4/img2.png)
 
 > **TAREA FINALIZADA**
@@ -140,7 +144,7 @@ Esto facilita la reutilización del código y permite crear múltiples ambientes
 
 ## Notas
 
-> Esta solo es información de referencia, no se debe usar en la practica.
+Esta solo es información de referencia, no se debe usar en la practica.
 
 - El siguiente comando ayudaria a pasar el valor así:
 

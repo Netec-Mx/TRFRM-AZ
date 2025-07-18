@@ -24,7 +24,7 @@ Definir tres recursos básicos en Azure con Terraform: un grupo de recursos, una
 
 ### Tarea 1. Declarar el Grupo de Recursos
 
-> En esta tarea se agregará un bloque que define el grupo de recursos de Azure en el archivo `main.tf`. Cada estudiante debe usar sus **iniciales** para evitar conflictos en los nombres.
+En esta tarea se agregará un bloque que define el grupo de recursos de Azure en el archivo `main.tf`. Cada estudiante debe usar sus **iniciales** para evitar conflictos en los nombres.
 
 #### Tarea 1.1. Abrir el archivo `main.tf`
 
@@ -38,7 +38,7 @@ Definir tres recursos básicos en Azure con Terraform: un grupo de recursos, una
 
 #### Tarea 1.2. Agregar el recurso `azurerm_resource_group`
 
-- **Paso 1.** Al final del archivo `main.tf`, agrega este bloque. **Reemplaza `xxx` por tus iniciales**:
+- **Paso 4.** Al final del archivo `main.tf`, agrega este bloque. **Reemplaza `xxx` por tus iniciales**:
 
   ```hcl
   resource "azurerm_resource_group" "rg_demo" {
@@ -46,7 +46,9 @@ Definir tres recursos básicos en Azure con Terraform: un grupo de recursos, una
     location = "East US"
   }
   ```
+  
   ---
+  
   ![terraimg19](../images/lab3/img1.png)  
 
 > Ejemplo: si tus iniciales son `lmr`, el nombre será `rg-vnet-lmr`.
@@ -59,9 +61,9 @@ Definir tres recursos básicos en Azure con Terraform: un grupo de recursos, una
 
 ### Tarea 2. Declarar la Red Virtual
 
-> En esta tarea se agregará la red virtual (`azurerm_virtual_network`) haciendo referencia al grupo de recursos definido anteriormente.
+En esta tarea se agregará la red virtual (`azurerm_virtual_network`) haciendo referencia al grupo de recursos definido anteriormente.
 
-> El nombre de la red virtual también deberá incluir tus iniciales.
+El nombre de la red virtual también deberá incluir tus iniciales.
 
 #### Tarea 2.1. Agregar el recurso `azurerm_virtual_network`
 
@@ -77,7 +79,9 @@ Definir tres recursos básicos en Azure con Terraform: un grupo de recursos, una
     resource_group_name = azurerm_resource_group.rg_demo.name
   }
   ```
+  
   ---
+  
   ![terraimg20](../images/lab3/img2.png) 
 
 > Asegúrate de usar las mismas iniciales que en el grupo de recursos.
@@ -90,9 +94,9 @@ Definir tres recursos básicos en Azure con Terraform: un grupo de recursos, una
 
 ### Tarea 3. Declarar una Instancia de Contenedor en Azure
 
-> En esta tarea se agregará una definición de recurso para desplegar una instancia de contenedor sencilla (basada en la imagen pública `mcr.microsoft.com/azuredocs/aci-helloworld`).
+En esta tarea se agregará una definición de recurso para desplegar una instancia de contenedor sencilla (basada en la imagen pública `mcr.microsoft.com/azuredocs/aci-helloworld`).
 
-> El nombre del contenedor también deberá llevar tus iniciales.
+El nombre del contenedor también deberá llevar tus iniciales.
 
 #### Tarea 3.1. Agregar el recurso `azurerm_container_group`
 
@@ -124,7 +128,9 @@ Definir tres recursos básicos en Azure con Terraform: un grupo de recursos, una
     }
   }
   ```
+  
   ---
+  
   ![terraimg21](../images/lab3/img3.png)
 
 > Cambia también `acilab-abc` por algo como `acilab-jpg` si tus iniciales son `jpg`.

@@ -24,7 +24,7 @@ Entender la función y estructura del archivo `terraform.tfstate`, el cual manti
 
 ### Tarea 1. Ubicar el archivo `terraform.tfstate`
 
-> El archivo `.tfstate` se genera automáticamente después de ejecutar `terraform apply`.
+El archivo `.tfstate` se genera automáticamente después de ejecutar `terraform apply`.
 
 #### Tarea 1.1. Verificar su existencia
 
@@ -35,7 +35,9 @@ Entender la función y estructura del archivo `terraform.tfstate`, el cual manti
   ```
   terraform.tfstate
   ```
+  
   ---
+  
   ![terraimg31](../images/lab7/img1.png)
 
   > Este archivo es creado por Terraform para registrar el estado de la infraestructura que gestiona.
@@ -48,7 +50,7 @@ Entender la función y estructura del archivo `terraform.tfstate`, el cual manti
 
 ### Tarea 2. Visualizar el contenido del archivo
 
-> Aunque es un archivo en formato JSON, puede inspeccionarse directamente desde Visual Studio Code o desde la terminal.
+Aunque es un archivo en formato JSON, puede inspeccionarse directamente desde Visual Studio Code o desde la terminal.
 
 #### Tarea 2.1. Leer el archivo con Visual Studio Code
 
@@ -66,7 +68,7 @@ Entender la función y estructura del archivo `terraform.tfstate`, el cual manti
   
 #### Tarea 2.2. Mostrar el estado con `terraform show`
 
-- **Paso 1.** En la terminal, ejecuta el siguiente comando.
+- **Paso 3.** En la terminal, ejecuta el siguiente comando.
 
   ```bash
   terraform show
@@ -74,12 +76,14 @@ Entender la función y estructura del archivo `terraform.tfstate`, el cual manti
 
   > Este comando presenta el estado de los recursos en un formato legible, incluyendo nombres, tipos y propiedades.
 
-- **Paso 2.** Puedes mejorar la salida con el siguiente comando.
+- **Paso 4.** Puedes mejorar la salida con el siguiente comando.
 
   ```bash
   terraform state list
   ```
+  
   ---
+  
   ![terraimg34](../images/lab7/img4.png)
 
 > **TAREA FINALIZADA**
@@ -90,7 +94,7 @@ Entender la función y estructura del archivo `terraform.tfstate`, el cual manti
 
 ### Tarea 3. Recomendación: Seguridad y respaldo del archivo `.tfstate`
 
-> Esta tarea se enfoca en concientizar sobre la importancia de **proteger y respaldar correctamente** el archivo `terraform.tfstate`.
+Esta tarea se enfoca en concientizar sobre la importancia de **proteger y respaldar correctamente** el archivo `terraform.tfstate`.
 
 #### Tarea 3.1. Evitar exponer el archivo
 
@@ -100,9 +104,9 @@ Entender la función y estructura del archivo `terraform.tfstate`, el cual manti
 
 #### Tarea 3.2. Hacer respaldos frecuentes (si trabajas local)
 
-- **Paso 1.** Copia manual del archivo antes de hacer cambios destructivos.
+- **Paso 3.** Copia manual del archivo antes de hacer cambios destructivos.
 
-- **Paso 2.** Renombrar o duplicar con fecha:
+- **Paso 4.** Renombrar o duplicar con fecha:
 
   ```bash
   cp terraform.tfstate terraform.tfstate.backup.2025-0x-xx
@@ -110,17 +114,19 @@ Entender la función y estructura del archivo `terraform.tfstate`, el cual manti
 
 #### Tarea 3.3. Ignorar en Git
 
-- **Paso 1.** Crear el archivo `.gitignore` con sl siguiente comando.
+- **Paso 5.** Crear el archivo `.gitignore` con sl siguiente comando.
 
   **NOTA:** Este es solo un ejemplo de buena practica, no se usa la herramienta git como repositorio en este curso.
 
   ```bash
   touch .gitignore
   ```
+  
   ---
+  
   ![terraimg35](../images/lab7/img5.png)
 
-- **Paso 2.** En el archivo `.gitignore`, asegúrate de incluir:
+- **Paso 6.** En el archivo `.gitignore`, asegúrate de incluir:
 
   **NOTA:** Este es solo un ejemplo de buena practica, no se usa la herramienta git como repositorio en este curso.
 
@@ -129,7 +135,9 @@ Entender la función y estructura del archivo `terraform.tfstate`, el cual manti
   terraform.tfstate.backup
   .terraform/
   ```
+  
   ---
+  
   ![terraimg36](../images/lab7/img6.png)
 
 > **TAREA FINALIZADA**

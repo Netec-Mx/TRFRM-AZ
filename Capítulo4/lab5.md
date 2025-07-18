@@ -27,7 +27,7 @@ Aprender a declarar y utilizar salidas (`output`) en Terraform para mostrar valo
 
 ### Tarea 1. Declarar salidas (`outputs`) en el archivo `main.tf`
 
-> En esta tarea se añadirán bloques `output` al final del archivo `main.tf` para mostrar información clave al usuario.
+En esta tarea se añadirán bloques `output` al final del archivo `main.tf` para mostrar información clave al usuario.
 
 #### Tarea 1.1. Abrir el archivo `main.tf`
 
@@ -80,7 +80,7 @@ Aprender a declarar y utilizar salidas (`output`) en Terraform para mostrar valo
 
 ## Notas
 
-> Esta solo es información de referencia, no se debe usar en la practica.
+Esta solo es información de referencia, no se debe usar en la practica.
 
 - Puedes ver los outputs sin aplicar cambios con:
 

@@ -26,7 +26,7 @@ Configurar la autenticación con el proveedor de Azure en Terraform utilizando A
 
 ### Tarea 1. Autenticarse en Azure CLI
 
-> Se usará el comando `az login` desde Git Bash para iniciar sesión en la cuenta de Azure, y se configurará la suscripción activa si hay más de una.
+Se usará el comando `az login` desde Git Bash para iniciar sesión en la cuenta de Azure, y se configurará la suscripción activa si hay más de una.
 
 #### Tarea 1.1. Iniciar sesión en Azure
 
@@ -34,49 +34,57 @@ Configurar la autenticación con el proveedor de Azure en Terraform utilizando A
 
 - **Paso 2.** Ejecuta el siguiente comando para iniciar sesión en Azure:
 
-   ```bash
-   az login
-   ```
+  ```bash
+  az login
+  ```
 
 - **Paso 3.** Se abrirá una ventana del navegador para iniciar sesión. Una vez completado, la terminal mostrará información de la cuenta autenticada.
 
-   **NOTA:** La autenticación debe de ser con el **usuario y contraseña** asignado al curso. **La suscripción puede ser diferente**
+  **NOTA:** La autenticación debe de ser con el **usuario y contraseña** asignado al curso. **La suscripción puede ser diferente**
 
-   **NOTA IMPORTANTE:** Es posible que al autenticarte te mande algun mensaje de error pero observa tu terminal para verificar que se haya autenticado correctamente como lo muestra la segunda imagen
+  **NOTA IMPORTANTE:** Es posible que al autenticarte te mande algun mensaje de error pero observa tu terminal para verificar que se haya autenticado correctamente como lo muestra la segunda imagen
 
-   ![terraimg10](../images/lab2/img1.png)
-   -
-   ![terraimg11](../images/lab2/img2.png)
+  ![terraimg10](../images/lab2/img1.png)
+  
+  ---
+  
+  ![terraimg11](../images/lab2/img2.png)
 
 
 #### Tarea 1.2. Seleccionar la suscripción deseada
 
-- **Paso 1.** Si tienes más de una suscripción, puedes verlas con:
+- **Paso 4.** Si tienes más de una suscripción, puedes verlas con:
 
-   ```bash
-   az account list --output table
-   ```
-   ---
-   ![terraimg12](../images/lab2/img3.png)
+  ```bash
+  az account list --output table
+  ```
+  
+  ---
+  
+  ![terraimg12](../images/lab2/img3.png)
 
 
-- **Paso 2.** Luego, selecciona la suscripción activa ejecutando:
+- **Paso 5.** Luego, selecciona la suscripción activa ejecutando:
 
-   **NOTA:** Sustituye el nombre de la suscipción por la del comando anterior, ejecutalo sin las comillas dobles.
+  **NOTA:** Sustituye el nombre de la suscipción por la del comando anterior, ejecutalo sin las comillas dobles.
 
-   ```bash
-   az account set --subscription "NOMBRE-DE-LA-SUSCRIPCIÓN"
-   ```
-   ---
-   ![terraimg13](../images/lab2/img4.png)
+  ```bash
+  az account set --subscription "NOMBRE-DE-LA-SUSCRIPCIÓN"
+  ```
+  
+  ---
+  
+  ![terraimg13](../images/lab2/img4.png)
 
-- **Paso 3.** Verifica la suscripción activa:
+- **Paso 6.** Verifica la suscripción activa:
 
-   ```bash
-   az account show
-   ```
-   ---
-   ![terraimg14](../images/lab2/img5.png)
+  ```bash
+  az account show
+  ```
+  
+  ---
+  
+  ![terraimg14](../images/lab2/img5.png)
 
 > **TAREA FINALIZADA**
 
@@ -86,50 +94,52 @@ Configurar la autenticación con el proveedor de Azure en Terraform utilizando A
 
 ### Tarea 2. Crear archivo de configuración de proveedor `main.tf`
 
-> En esta tarea se creará un directorio de proyecto y se escribirá un archivo `main.tf` que contiene la configuración mínima del proveedor `azurerm`.
+En esta tarea se creará un directorio de proyecto y se escribirá un archivo `main.tf` que contiene la configuración mínima del proveedor `azurerm`.
 
 #### Tarea 2.1. Crear estructura de proyecto
 
 - **Paso 1.** En la terminal de Git Bash, usa la carpeta previamente creada para el proyecto llamada **TERRALABS**:
 
-   **NOTA:** Si la carpeta `TERRALABS` no existe creala en el Escritorio.
+  **NOTA:** Si la carpeta `TERRALABS` no existe creala en el Escritorio.
 
-   ```bash
-   cd Desktop/TERRALABS
-   ```
-   ---
-   **NOTA:** Si es necesario ajusta el nombre de la carpeta.
+  ```bash
+  cd Desktop/TERRALABS
+  ```
+  
+  ---
+  
+  **NOTA:** Si es necesario ajusta el nombre de la carpeta.
 
-   ![terraimg15](../images/lab2/img6.png)
+  ![terraimg15](../images/lab2/img6.png)
 
 - **Paso 2.** Abre esta carpeta desde VS Code: **`File > Open Folder... > Selecciona Desktop y luego TERRALABS`** y confirma la ventana emergente.
 
-   ![terraimg16](../images/lab2/img7.png)
+  ![terraimg16](../images/lab2/img7.png)
 
 #### Tarea 2.2. Crear y editar `main.tf`
 
-- **Paso 1.** En el explorador de VS Code, crea un nuevo archivo llamado `main.tf`.
+- **Paso 3.** En el explorador de VS Code, crea un nuevo archivo llamado `main.tf`.
 
-   ![terraimg17](../images/lab2/img8.png)   
+  ![terraimg17](../images/lab2/img8.png)   
 
-- **Paso 2.** Copia y pega el siguiente contenido:
+- **Paso 4.** Copia y pega el siguiente contenido:
 
-   ```hcl
-   terraform {
-   required_providers {
-      azurerm = {
-         source  = "hashicorp/azurerm"
-         version = "~> 3.0"
-      }
-   }
+  ```hcl
+  terraform {
+  required_providers {
+     azurerm = {
+        source  = "hashicorp/azurerm"
+        version = "~> 3.0"
+     }
+  }
 
-   required_version = ">= 1.5.0"
-   }
+  required_version = ">= 1.5.0"
+  }
 
-   provider "azurerm" {
-   features {}
-   }
-   ```
+  provider "azurerm" {
+  features {}
+  }
+  ```
 
 > **TAREA FINALIZADA**
 
@@ -139,7 +149,7 @@ Configurar la autenticación con el proveedor de Azure en Terraform utilizando A
 
 ### Tarea 3. Extensión de Terraform en VSC
 
-> En esta tarea se instalará la extensión oficial de Terraform en Visual Studio Code para facilitar el desarrollo con soporte de sintaxis, autocompletado y validación en archivos `.tf`.
+En esta tarea se instalará la extensión oficial de Terraform en Visual Studio Code para facilitar el desarrollo con soporte de sintaxis, autocompletado y validación en archivos `.tf`.
 
 #### Tarea 3.1. Abrir el Marketplace de extensiones
 
@@ -147,31 +157,31 @@ Configurar la autenticación con el proveedor de Azure en Terraform utilizando A
 
 #### Tarea 3.2. Buscar la extensión oficial
 
-- **Paso 1.** En la barra de búsqueda escribe:
+- **Paso 2.** En la barra de búsqueda escribe:
 
-   ```
-   Terraform
-   ```
+  ```
+  Terraform
+  ```
 
-- **Paso 2.** Localiza la extensión llamada **“Terraform”** publicada por **HashiCorp**.
+- **Paso 3.** Localiza la extensión llamada **“Terraform”** publicada por **HashiCorp**.
 
 #### Tarea 3.3. Instalar la extensión
 
-- **Paso 1.** Da clic en el botón **"Install"**.
+- **Paso 4.** Da clic en el botón **"Install"**.
 
-   ![terraimg18](../images/lab2/img9.png)   
+  ![terraimg18](../images/lab2/img9.png)   
 
-- **Paso 2.** Confirma la ventana emergente clic en **Trust Publisher & Install**
+- **Paso 5.** Confirma la ventana emergente clic en **Trust Publisher & Install**
 
-- **Paso 3.** Espera a que finalice la instalación.
+- **Paso 6.** Espera a que finalice la instalación.
 
 #### Tarea 3.4. Validar que funcione
 
-- **Paso 1.** Abre tu archivo `main.tf`.
+- **Paso 7.** Abre tu archivo `main.tf`.
 
-- **Paso 2.** Verifica que aparezca resaltado de sintaxis (colores) y que se activen sugerencias automáticas (`CTRL + SPACE`).
+- **Paso 8.** Verifica que aparezca resaltado de sintaxis (colores) y que se activen sugerencias automáticas (`CTRL + SPACE`).
 
-- **Paso 3.** Por el momento no ejecutamos nada mas.
+- **Paso 9.** Por el momento no ejecutamos nada mas.
 
 > **TAREA FINALIZADA**
 
