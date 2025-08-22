@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Aprender a declarar y utilizar salidas (`output`) en Terraform para mostrar valores importantes al finalizar una ejecución, como el nombre del grupo de recursos, la dirección DNS del contenedor y el nombre de la red virtual. Las salidas se definirán directamente dentro del archivo `main.tf`.
+Aprender a declarar y utilizar salidas (`output`) en Terraform para mostrar valores importantes al finalizar una ejecución, como el nombre del grupo de recursos, la dirección DNS del contenedor y el nombre de la red virtual. Las salidas se definirán directamente dentro del archivo `main.tf` y serán útiles para auditoría, monitoreo o integración en flujos automatizados comunes en el sector financiero.
 
 ## Requisitos Previos
 
@@ -27,7 +27,7 @@ Aprender a declarar y utilizar salidas (`output`) en Terraform para mostrar valo
 
 ### Tarea 1. Declarar salidas (`outputs`) en el archivo `main.tf`
 
-En esta tarea se añadirán bloques `output` al final del archivo `main.tf` para mostrar información clave al usuario.
+En esta tarea se añadirán bloques `output` al final del archivo `main.tf` para mostrar información clave al usuario. Estas salidas permitirán validar valores importantes para trazabilidad y revisión de infraestructura.
 
 #### Tarea 1.1. Abrir el archivo `main.tf`
 

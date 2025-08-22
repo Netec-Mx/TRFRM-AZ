@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Entender la función y estructura del archivo `terraform.tfstate`, el cual mantiene el estado actual de los recursos creados por Terraform. Esta práctica te permitirá visualizar, interpretar y comprender cómo Terraform rastrea los recursos administrados.
+Entender la función y estructura del archivo `terraform.tfstate`, el cual mantiene el estado actual de los recursos creados por Terraform. Esta práctica te permitirá visualizar, interpretar y comprender cómo Terraform rastrea los recursos administrados, aplicando buenas prácticas de seguridad y respaldo, fundamentales en ambientes financieros regulados.
 
 ## Requisitos Previos
 

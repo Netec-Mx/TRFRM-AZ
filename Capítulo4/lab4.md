@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Refactorizar el archivo `main.tf` utilizando variables locales definidas en el mismo archivo, para hacer el código más organizado y reutilizable. Se declaran variables directamente en `main.tf` y se usan para crear un grupo de recursos, una red virtual y una instancia de contenedor en Azure.
+Refactorizar el archivo `main.tf` utilizando variables locales definidas en el mismo archivo, para hacer el código más organizado, reutilizable y alineado a estándares de entornos financieros. Se declaran variables directamente en `main.tf` y se usan para crear un grupo de recursos, una red virtual y una instancia de contenedor con buenas prácticas de nombrado y trazabilidad.
 
 ## Requisitos Previos
 
@@ -35,7 +35,7 @@ En esta tarea se crearán las variables directamente al inicio del archivo `main
 
 #### Tarea 1.2. Añadir bloques de variables y valores
 
-- **Paso 1.** Añade la variable `initials` con el valor de forma local, copia el siguiente codigo antes de los recursos y despues del proveedor declarado. **`Sustituye el valor del parametro default por tus iniciales`**:
+- **Paso 3.** Añade la variable `initials` con el valor de forma local, copia el siguiente codigo **antes de los recursos** y **despues del proveedor** declarado. **`Sustituye el valor del parametro default por tus iniciales`**:
 
   ```hcl
   variable "initials" {
@@ -45,25 +45,25 @@ En esta tarea se crearán las variables directamente al inicio del archivo `main
   }
   ```
 
-- **Paso 2.** Copia este bloque al inicio del archivo, antes de los recursos y despues de la variable `initials` declarada:
+- **Paso 4.** Copia este bloque al inicio del archivo, antes de los recursos y despues de la variable `initials` declarada:
 
   ```hcl
   locals {
     location             = "East US"
-    resource_group_name  = "rg-vnet-${var.initials}"
-    vnet_name            = "vnet-${var.initials}"
-    aci_name             = "aci-${var.initials}"
-    aci_dns_label        = "acilab-${lower(var.initials)}"
+    resource_group_name  = "rg-finanzas-${var.initials}"
+    vnet_name            = "vnet-fin-${var.initials}"
+    aci_name             = "aci-reportes-${var.initials}"
+    aci_dns_label        = "aci-fin-${lower(var.initials)}"
   }
   ```
   
   ---
   
-  ![terraimg22](../images/lab4/img1.png)
+  ![terraimg22](../images/lab4/fin/1.png)
 
 > **TAREA FINALIZADA**
 
-**Resultado esperado:** Las variables están declaradas en el mismo archivo, y sus valores están definidos en el bloque `locals`.
+**Resultado esperado:** Las variables están declaradas en el mismo archivo, y sus valores están definidos en el bloque `locals` usando una convención de nombres orientada al sector financiero.
 
 ---
 
@@ -73,7 +73,7 @@ En esta tarea se actualizarán los recursos ya existentes en `main.tf` para que 
 
 #### Tarea 2.1. Sustituir los valores fijos en los recursos
 
-- **Paso 1.** Asegúrate de tener estos recursos definidos, ahora con variables:
+- **Paso 5.** Asegúrate de tener estos recursos definidos, ahora con variables:
 
   - **Opcion 1:** Puedes copiar y pegar todo el siguiente bloque ya tiene los cambios de las variables.
 
@@ -87,9 +87,15 @@ En esta tarea se actualizarán los recursos ya existentes en `main.tf` para que 
 
   resource "azurerm_virtual_network" "vnet_demo" {
     name                = local.vnet_name
-    address_space       = ["10.0.0.0/16"]
+    address_space       = ["10.1.0.0/16"]
     location            = local.location
     resource_group_name = local.resource_group_name
+    depends_on          = [ azurerm_resource_group.rg_demo ]
+
+    tags = {
+      security_zone = "isolated"
+      environment   = "dev"
+    }
   }
 
   resource "azurerm_container_group" "aci_demo" {
@@ -97,6 +103,7 @@ En esta tarea se actualizarán los recursos ya existentes en `main.tf` para que 
     location            = local.location
     resource_group_name = local.resource_group_name
     os_type             = "Linux"
+    depends_on          = [ azurerm_resource_group.rg_demo ]
 
     container {
       name   = "webapp"
@@ -121,11 +128,11 @@ En esta tarea se actualizarán los recursos ya existentes en `main.tf` para que 
   
   ---
   
-  ![terraimg23](../images/lab4/img2.png)
+  ![terraimg23](../images/lab4/fin/2.png)
 
 > **TAREA FINALIZADA**
 
-**Resultado esperado:** Todos los recursos ahora utilizan las variables declaradas localmente.
+**Resultado esperado:** Todos los recursos ahora utilizan las variables declaradas localmente, con un esquema claro, profesional y alineado a proyectos del sector financiero.
 
 ---
 
@@ -153,7 +160,7 @@ Esta solo es información de referencia, no se debe usar en la practica.
   ```
 
 - Alternativamente, puedes establecer un valor por defecto en la variable `initials` si no usarás `-var` en la terminal.
-- Este enfoque simplifica el despliegue sin archivos externos como `variables.tf` o `tfvars`.
+- Este enfoque simplifica el despliegue sin archivos externos como `variables.tf` o `tfvars`, facilitando ambientes financieros en desarrollo.
 
 ---
 

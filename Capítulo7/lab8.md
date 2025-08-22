@@ -204,6 +204,6 @@ Se utilizarán las variables en etiquetas, y se agregará un output sensible par
   terraform.tfvars
   ```
 
-  ---
+---
 
 **[⬅️ Atrás](https://netec-mx.github.io/TRFRM-AZ/Capítulo6/lab7.html)** | **[Lista General](https://netec-mx.github.io/TRFRM-AZ/)** | **[Siguiente ➡️](https://netec-mx.github.io/TRFRM-AZ/Capítulo8/lab9.html)**
